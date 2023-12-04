@@ -24,8 +24,8 @@ EclipseApp:
 
 - App should be like attached screenshots below.
 
-![appka1](./assets/appka1.png)
-![appka2](./assets/appka2.png)
+![appka1](./assets/Appka1.png)
+![appka2](./assets/Appka2.png)
 
 ## The Code
 
