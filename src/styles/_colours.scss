@@ -1,15 +1,15 @@
 $white: white;
 $black: black;
 $text: #333333;
-$lowStock: #ED143D;
-$normalStock: #27AE60;
+$lowStock: #ed143d;
+$normalStock: #27ae60;
 $shadowBox: #e61577;
 $link: blue;
-$rrp: #BFBFBF;
+$rrp: #bfbfbf;
 
 // export selected colours to js...
 :export {
-	lowStock: $lowStock;
-	normalStock: $normalStock;
-	rrp: #BFBFBF;
-} 
+  lowStock: $lowStock;
+  normalStock: $normalStock;
+  rrp: #bfbfbf;
+}

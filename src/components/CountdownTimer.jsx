@@ -1,6 +1,5 @@
 import { createSignal, onCleanup } from "solid-js";
-import { RiMapTruckFill } from 'solid-icons/ri'
-// import "./ticker.scss";
+import { RiMapTruckFill } from "solid-icons/ri";
 
 const timeBetweenDates = (validTill) => {
   const validFromDate = new Date();
@@ -54,7 +53,8 @@ const CountdownTimer = ({ validTill }) => {
   onCleanup(() => clearInterval(timer));
 
   return (
-    <li><RiMapTruckFill size={24} color="#000000" />
+    <li>
+      <RiMapTruckFill size={24} color="#000000" />
       Order in next{" "}
       <strong>
         <span className="ticker-unit-container">

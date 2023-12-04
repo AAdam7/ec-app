@@ -5,8 +5,12 @@ const ProgressBar = (props) => {
   const barColor = () =>
     `
 	border-radius: 3px;
-	background-color:`+bgcolor +`; 
-	width: `+completed / 2 +`%; //scale changed for DummyAPI
+	background-color:` +
+    bgcolor +
+    `; 
+	width: ` +
+    completed / 2 +
+    `%; //scale changed for DummyAPI
 	max-width: 100%;
 	height: 4px;
 `;
