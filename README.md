@@ -2,10 +2,11 @@
 
 ## Stack
 - JS
-- SolidJS
+- SolidJS (first time used SolidJS)
 - NodeJS
 - ReactJS
 - SCSS (pre- optional)
+- IconPack
 - RTL (not yet)
 
 ## Tested with
@@ -19,7 +20,7 @@
 EclipseApp:
 
 - After load list of items, Click any BUTTON to see console details (ID/PRICE)
-- Mobile/Desktop Flex, css need rebuild... etc.
+- Mobile/Desktop Flex, styling/css need rebuild... etc.
 - Due to current TechTest nature some components are more/less complex, for explain please chat with me.
 
 - App should be like attached screenshots below.
@@ -35,4 +36,4 @@ One directory:
 
 To get the project start, jump into the `ec-app` directory and run `npm install` or `npm i` followed by `npm run start`.
 
-You should see the webapp on http://localhost:1234/
+You should see the webapp on http://localhost:3000/
