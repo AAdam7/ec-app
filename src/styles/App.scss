@@ -1,0 +1,253 @@
+// I didn't move all colours/vars... also this need sort to sass... that's only demo... yep... any Tailwind/Bootstrap will save a time
+
+.App {
+  /* text-align: center; */
+  background-color: $white;
+  color: #333;
+  text-wrap: wrap;
+}
+
+.logo {
+  animation: logo-spin infinite 20s linear;
+  /* height: 40vmin; */
+  pointer-events: none;
+}
+
+.header {
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.link {
+  color: $link;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
+
+.productListItemWrapper {
+  text-align: left;
+  width: auto;
+  height: auto;
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 0px #0000001f;
+  justify-content: space-between;
+}
+
+.productListItemWrapperShadow {
+  border: 1px solid $black;
+  box-shadow: 0px 0px 20px 0px $shadowBox;
+}
+
+.productListItem {
+  margin: 20px;
+}
+
+.productImgWrapper {
+  order: 1;
+}
+
+.productTitlewrapper {
+  order: 2;
+}
+.productPriceDelivery {
+  order: 4;
+}
+
+h1 {
+  font-size: 26px;
+}
+h2 {
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+  line-height: 0;
+}
+h3 {
+  font-size: 14px;
+}
+p {
+  // width: 300px;
+  font-size: 16px;
+  text-wrap: wrap;
+}
+
+img {
+  // width: 100%;
+  max-width: 127px;
+}
+
+.stars {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  list-style-position: outside;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  text-indent: -1.6em;
+  padding-left: 1em;
+}
+
+.labelRecommended {
+  position: absolute;
+  background-color: #333;
+  margin-left: 30px;
+  padding: 10px;
+  border-radius: 0 0 5px 5px;
+  color: white;
+  font-weight: 700;
+}
+
+.low {
+  color: $lowStock;
+}
+.normal {
+  color: $normalStock;
+}
+
+button {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: rgb(230, 21, 119);
+  background: linear-gradient(
+    90deg,
+    rgba(230, 21, 119, 1) 0%,
+    rgba(153, 36, 120, 1) 100%
+  );
+}
+
+.stockInfo {
+  font-size: 12px;
+}
+
+.originalPrice {
+  width: fit-content;
+  background: repeating-linear-gradient(
+    -2deg,
+    white,
+    white 10px,
+    $rrp 10px,
+    $rrp 11px
+  );
+}
+
+.progressbar {
+  &.stock {
+    &.low {
+      background-color: $lowStock;
+    }
+    &.normal {
+      background-color: $normalStock;
+    }
+  }
+  &.containerStyles {
+    height: 4px;
+    width: 100%;
+    background-color: #cfcfcf;
+    border-radius: 5px;
+    padding: 1px;
+  }
+  &.labelStyles {
+    padding: 5;
+    color: $white;
+    font-weight: "bold";
+  }
+}
+
+.productImgWrapper {
+  order: 1;
+  // margin: 20px;
+}
+.starsWrapper {
+  order: 2;
+}
+
+.deliveryBox {
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+
+.discountBox {
+  p {
+    padding: 3px 6px;
+    width: auto;
+  }
+  width: fit-content;
+  border-radius: 4px;
+  background-color: rgba($lowStock, 0.2);
+}
+
+.progressBarWrapper {
+  margin-top: 40px;
+}
+
+.isDesktop {
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  .productTitlewrapper {
+    order: 1;
+  }
+
+  .productImgWrapper {
+    order: 2;
+  }
+
+  .starsWrapper {
+    order: 3;
+  }
+
+  .productPriceDelivery {
+    order: 4;
+  }
+  .isMobile {
+    display: none;
+  }
+  .isDesktop {
+    display: flex;
+  }
+
+  figure {
+    text-align: center;
+    img {
+      max-width: 50%;
+    }
+  }
+
+  .productListItemWrapper {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-between;
+  }
+  button {
+    width: 100%;
+  }
+  .deliveryBox {
+    max-width: 100%;
+  }
+}
